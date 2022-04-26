@@ -14,7 +14,7 @@ public class FilterVowels
 	     {
 		 
 		
-		list.chars().filter(x -> vowels.indexOf(x) != -1).forEach(y -> System.out.println((char)y);
+		list.chars().filter(x -> vowels.indexOf(x) != -1).forEach(y -> System.out.println((char)y));
 		
 		
 	}
