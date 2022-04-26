@@ -7,14 +7,14 @@ public class FilterVowels
 {
 	public static void main(String[] args) 
 	{
-		List<Character> vowels=Arrays.asList('a','i','e','o','u','s');
+		String vowels="AEIOUaeiou;
 		String names[]= {"karthik","navaneeth","akash","lakki"};
 		List list=Arrays.asList(names);
-	     for(Character i: vowels)
+	     for(String i: list)
 	     {
 		 
 		
-		list.stream().filter(x -> vowels.remove(i)).forEach( System.out::println);
+		list.chars().filter(x -> vowels.indexOf(x) != -1).forEach(y -> System.out.println((char)y);
 		
 		
 	}
