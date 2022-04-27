@@ -10,9 +10,13 @@ public class CalculatingGrade
 @RequestMapping("/studentsgrade/{marks}")
 String studentGrade(@PathVariable int marks)
 {
-	return (calcu(marks));
+	Student s=new Student();
+	return (s.calcu(marks));
 	
 }
+}
+class Student
+{
 String calcu(int marks)
 {
 if(marks>=80)
